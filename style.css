@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400&display=swap');
+@font-face {
+  font-family: 'Earth Orbiter Extra-Bold Bold';
+  src: local('Earth Orbiter Extra-Bold Bold'), url('earthorbiterxtrabold.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-size: cover;
+  height: 100vh;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flexboxWrap, .enhypenFlexboxWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/*navbar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3vw;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #111;
+}
+
+.logo {
+  width: 6vw;
+  margin-left: 1vw;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+ 
+.swiper {
+  width: 100vw;
+  height: 85vh;
+  margin-bottom: 4vw;
+  overflow-y: hidden;
+}
+
+.swiper-slide > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  margin-top: 0.2vw;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family:'Earth Orbiter Extra-Bold Bold';
+  font-size: 7vw;
+  margin-bottom: 4vw;
+  letter-spacing: 0.5vw;
+}
+
+footer {
+  display: flex;
+  margin-top: 2vw;
+  justify-content: space-evenly;
+}
+
+/*social media*/
+.icon {
+  width: 3vw;
+}
+
+.weverse {
+  width: 3.5vw;
+}
+
+.weibo {
+  width: 4vw;
+}
+
+/*home page*/
+.enhypen {
+  color: white;
+  margin-bottom: 3vw;
+  font-size: 2vw;
+}
+
+.intro {
+  color: white;
+  margin-left: 9vw;
+  margin-right: 9vw;
+  margin-top: 3vw;
+  font-size: 1.5vw;
+  justify-content: center;
+}
+
+.infoSub {
+  color: #a5a5a5;
+  font-size: 1.5vw;
+}
+
+/*profile page*/
+.profileContainer {
+  position: relative;
+  width: 13vw;
+}
+
+.member {
+  opacity: 1;
+  display: block;
+  width: 13vw;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.profileContainer:hover .member, 
+.albumContainer:hover .album,
+.albumContainerLatest:hover .albumLatest {
+  opacity: 0.3;
+}
+
+.profileContainer:hover .middle,
+.albumContainer:hover .middle,
+.albumContainerLatest:hover .middle,
+.contestant:hover .middle {
+  opacity: 1;
+}
+
+.name, .albumTitle, .albumTitle a {
+  color: white;
+  font-size: 2vw;
+}
+
+/*discography*/
+.albumContainer {
+  position: relative;
+  width: 27vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.album {
+  opacity: 1;
+  display: block;
+  width: 27vw;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.sub {
+  color: #a5a5a5;
+  font-size: 1.2vw;
+}
+
+.albumContainerLatest {
+  position: relative;
+  width: 35vw;
+  margin-bottom: 2vw;
+}
+
+.albumLatest {
+  opacity: 1;
+  display: block;
+  width: 35vw;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.albumTitleLatest, .albumTitleLatest a {
+  color: white;
+  font-size: 2.1vw;
+}
+
+.albumNumLatest {
+  color: #a5a5a5;
+  font-size: 1.5vw;
+}
+
+/*iland*/
+.contestant {
+  position: relative;
+  width: 18vw;
+  margin: 2vw;
+}
+
+.contestantMember {
+  opacity: 1;
+  display: block;
+  width: 18vw;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.contestant:hover .contestantMember {
+  opacity: 0.5;
+}
+
+iframe {
+  width: 90vw;
+  height: 50vw;
+}
+
+.title2 {
+  margin-top: 4vw;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family:'Earth Orbiter Extra-Bold Bold';
+  font-size: 6vw;
+  letter-spacing: 0.5vw;
+}
+
+.watch {
+  color: white;
+  margin-left: 9vw;
+  margin-right: 9vw;
+  font-size: 2vw;
+  justify-content: center;
+  margin-top: 0.5vw;
+  margin-bottom: 4vw;
+}
+
+.watch a {
+  display: flex;
+  color: white;
+  text-align: center;
+}
+
+.name a, .back a {
+  display: flex;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.watch a:hover, .name a:hover{
+  color: #a5a5a5;
+}
+
+.backflex {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.arrowback, .arrownext {
+  width: 3vw;
+}
+
+.memberImg {
+  width: 20vw;
+}
+
+.memberName {
+  color: white;
+  font-size: 6.5vw;
+  text-align: center;
+}
+
+.memberDescription {
+  margin-top: 2vw;
+  font-size: 1.1vw;
+  color: white;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .title {
+    margin-top: 0.2vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family:'Earth Orbiter Extra-Bold Bold';
+    font-size: 9vw;
+    margin-bottom: 4vw;
+    letter-spacing: 0.5vw;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.3vw;
+  }
+
+  li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 10vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+
+  .icon {
+    width: 5vw;
+  }
+
+  .weverse {
+    width: 5.5vw;
+  }
+
+  .weibo {
+    width: 6vw;
+  }
+
+  .intro {
+    color: white;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 3vw;
+    font-size: 2.3vw;
+    justify-content: center;
+  }
+
+  .enhypenFlexboxWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .enhypen {
+    color: white;
+    margin-bottom: 3vw;
+    font-size: 2.9vw;
+  }
+
+  .infoSub {
+    color: #a5a5a5;
+    font-size: 2vw;
+  }
+
+  .profileContainer {
+    position: relative;
+    width: 23vw;
+  }
+
+  .member {
+    opacity: 1;
+    display: block;
+    width: 23vw;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .albumContainer {
+    position: relative;
+    width: 37vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+
+  .album {
+    opacity: 1;
+    display: block;
+    width: 37vw;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .albumContainerLatest {
+    position: relative;
+    width: 47vw;
+    margin-bottom: 2vw;
+  }
+
+  .albumLatest {
+    opacity: 1;
+    display: block;
+    width: 47vw;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .albumTitleLatest, .albumTitleLatest a {
+    color: white;
+    font-size: 4vw;
+  }
+
+  .albumNumLatest {
+    color: #a5a5a5;
+    font-size: 2.5vw;
+  }
+
+  .name, .albumTitle, .albumTitle a {
+    color: white;
+    font-size: 3.5vw;
+  }
+
+  .sub {
+    color: #a5a5a5;
+    font-size: 2vw;
+  }
+
+  .contestant {
+    position: relative;
+    width: 29vw;
+    margin: 2vw;
+  }
+
+  .contestantMember {
+    opacity: 1;
+    display: block;
+    width: 29vw;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .watch {
+    color: white;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 2.3vw;
+    justify-content: center;
+    margin-top: 0.5vw;
+    margin-bottom: 4vw;
+  }
+
+  .swiper {
+    width: 100vw;
+    height: 40vh;
+    margin-bottom: 4vw;
+    overflow-y: hidden;
+  }
+
+  .arrowback, .arrownext {
+    width: 5vw;
+  }
+
+  .memberImg {
+    width: 50vw;
+    margin-bottom: 3vw;
+  }
+
+  .memberName {
+    color: white;
+    font-size: 7.5vw;
+    text-align: center;
+  }
+
+  .memberDescription {
+    margin: 5vw;
+    font-size: 2.5vw;
+    color: white;
+  }
+}
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> <!-- PROF NOTE: CSS for slideshow library -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+
+	<ul>
+		<div>
+			<img src="logo.jpg" class="logo">
+		</div>
+		<div class="nav">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="profile.html">PROFILE</a></li>
+			<li><a href="discography.html">DISCOGRAPHY</a></li>
+			<li><a href="i-land.html">I-LAND</a></li>
+		</div>
+	</ul>
+
+	<div class="swiper">
+		<div class="swiper-wrapper">
+		    <!-- Slides -->
+		    <div class="swiper-slide"><img src="gallery/gallery1.jpg"></div>
+			<div class="swiper-slide"><img src="gallery/gallery2.jpg"></div>
+			<div class="swiper-slide"><img src="gallery/gallery3.jpg"></div>
+			<div class="swiper-slide"><img src="gallery/gallery4.jpg"></div>
+		</div>
+	</div>
+
+	<div>
+		<p class="title">ENHYPEN</p>
+	</div>
+
+	<div class="enhypenFlexboxWrap">
+		<div class="enhypen">
+			<p class="infoSub">DEBUT</p>
+			<div>2020-11-30</div>
+		</div>
+		<div class="enhypen">
+			<p class="infoSub">MEMBERS</p>
+			<div>JUNGWON, HEESEUNG, JAY, JAKE, SUNGHOON, SUNOO, NI-KI</div>
+		</div>
+	</div>
+
+	<div class="flexbox">
+		<div class="intro">
+			ENHYPEN is the first boyband created by BELIFT LAB, consisting of seven multinational members: JUNGWON, HEESEUNG, JAY, JAKE, SUNGHOON, SUNOO and NI-KI. They are the finalists of global music competition show ‘I-LAND,’ which finished airing in September 2020. The members have already shown infinite possibilities and growth not only as individuals, but also as a team. Similar to the ‘hyphen(-)’ that connects one word to another, ENHYPEN means that seven different boys connect to discover one another and grow together. It also indicates their ambitious plan to connect people and the world through their music.
+		</div>
+	</div>
+
+	<footer>
+		<li>
+			<a href="https://twitter.com/enhypen_members"><img src="socialMedia/tw.png" class="icon"></a>
+		</li>
+		<li>
+			<a href="https://twitter.com/enhypen" class="fb"><img src="socialMedia/x.png" class="icon"></a>
+		</li>
+		<li>
+			<a href="https://www.facebook.com/officialENHYPEN"><img src="socialMedia/fb.png" class="icon"></a>
+		</li>
+		<li>
+			<a href="https://www.instagram.com/enhypen/"><img src="socialMedia/ig.png" class="icon"></a>
+		</li>
+		<li>
+			<a href="https://weverse.io/"><img src="socialMedia/weverse.png" class="weverse"></a>
+		</li>
+		<li>
+			<a href="https://www.youtube.com/channel/UCArLZtok93cO5R9RI4_Y5Jw"><img src="socialMedia/yt.png" class="icon"></a>
+		</li>
+		<li>
+			<a href="https://weibo.com/ENHYPEN"><img src="socialMedia/weibo.png" class="weibo"></a>
+		</li>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper', {
+		  loop: true,
+		  autoplay: true,
+		});
+	</script>
+</body>
+</html>
